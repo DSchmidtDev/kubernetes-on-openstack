@@ -137,8 +137,8 @@ write_files:
     owner: root:root
     permissions: '0600'
 packages:
-  - kubelet
-  - kubeadm
+  - kubelet=1.9.6-00
+  - kubeadm=1.9.6-00
   - ipvsadm
   - [docker-ce, 17.03.2~ce-0~ubuntu-xenial]
 runcmd:

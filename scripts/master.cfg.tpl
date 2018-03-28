@@ -297,8 +297,8 @@ write_files:
     owner: root:root
     permissions: '0600'
 packages:
-  - kubelet
-  - kubeadm
+  - kubelet=1.9.6-00
+  - kubeadm=1.9.6-00
   - kubectl
   - jq
   - ipvsadm
