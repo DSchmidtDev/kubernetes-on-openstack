@@ -114,7 +114,7 @@ write_files:
     permissions: '0644'
 -   content: |
         [Service]
-        Environment="KUBELET_EXTRA_ARGS=--cgroup-driver=systemd --cloud-provider=openstack --cloud-config=/etc/kubernetes/cloud-config --serialize-image-pulls=false --feature-gates=ReadOnlyAPIDataVolumes=false"
+        Environment="KUBELET_EXTRA_ARGS=--cgroup-driver=systemd --cloud-provider=openstack --cloud-config=/etc/kubernetes/cloud-config --serialize-image-pulls=false --feature-gates=ReadOnlyAPIDataVolumes=false --housekeeping-interval 1s"
     path: /etc/systemd/system/kubelet.service.d/20-kubeadm.conf
     owner: root:root
     permissions: '0644'
