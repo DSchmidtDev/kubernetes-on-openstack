@@ -322,7 +322,7 @@ runcmd:
   - [ kubectl, apply, --kubeconfig=/etc/kubernetes/admin.conf, -f, "/etc/kubernetes/storageclass.yaml" ]
   - [ kubectl, apply, --kubeconfig=/etc/kubernetes/admin.conf, -f, "https://raw.githubusercontent.com/kubernetes/heapster/v1.5.2/deploy/kube-config/influxdb/influxdb.yaml" ]
   - [ kubectl, apply, --kubeconfig=/etc/kubernetes/admin.conf, -f, "https://raw.githubusercontent.com/kubernetes/heapster/v1.5.2/deploy/kube-config/rbac/heapster-rbac.yaml" ]
-  - [ kubectl, apply, --kubeconfig=/etc/kubernetes/admin.conf, -f, "https://raw.githubusercontent.com/kubernetes/heapster/v1.5.2/deploy/kube-config/influxdb/heapster.yaml" ]
+  - [ kubectl, apply, --kubeconfig=/etc/kubernetes/admin.conf, -f, "https://gist.githubusercontent.com/DSchmidtDev/03779cbe07ab01e6e4391aad11013f07/raw/5741c7a77faa865f1438e3945bee1988ba98cad5/heapster.yaml" ]
   - [ kubectl, apply, --kubeconfig=/etc/kubernetes/admin.conf, -f, "https://raw.githubusercontent.com/kubernetes/heapster/v1.5.2/deploy/kube-config/influxdb/grafana.yaml" ]
   - [ kubectl, apply, --kubeconfig=/etc/kubernetes/admin.conf, -f, "/etc/kubernetes/rbac-default.yaml" ]
   - [ kubectl, apply, --kubeconfig=/etc/kubernetes/admin.conf, -f, "/etc/kubernetes/keystone-webhook-ds.yaml" ]
